@@ -230,14 +230,14 @@ export default function Home() {
             </p>
           </div>
 
-      <<a
-         href="https://mont.ink/terceiro-nivel"
-         target="_blank"
-         rel="noopener noreferrer"
-         className="block w-full bg-white text-black rounded-2xl py-4 px-6 text-base font-medium text-center hover:opacity-90 transition"
+      <a
+  href="https://mont.ink/terceiro-nivel"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="block w-full bg-white text-black rounded-2xl py-4 px-6 text-base font-medium text-center hover:opacity-90 transition"
 >
-         Conhecer a camiseta
-      </a>
+  Conhecer a camiseta
+</a>
         </div>
       </section>
 
