@@ -1,24 +1,34 @@
 export default function Home() {
   return (
     <main className="bg-white text-zinc-900 min-h-screen">
-      {/* HEADER */}
-      <header className="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-zinc-200">
-        <div className="max-w-xl mx-auto px-6 py-4 flex items-center justify-between">
-          <div>
-            <div className="text-xs uppercase tracking-[0.2em] text-zinc-500">
-              Projeto
-            </div>
+ {/* HEADER */}
+<header className="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-zinc-200">
+  <div className="max-w-xl mx-auto px-6 py-4 flex items-center justify-between">
 
-            <div className="text-lg font-semibold">
-              Terceiro Nível
-            </div>
-          </div>
+    <div className="flex items-center gap-3 -mt-1">
+      <img
+        src="/logo-nova.png"
+        alt="Logo Terceiro Nível"
+        className="w-12 h-12"
+      />
 
-          <button className="text-sm border border-zinc-300 rounded-full px-4 py-2">
-            Participar
-          </button>
+      <div>
+        <div className="text-xs uppercase tracking-[0.2em] text-zinc-500">
+          Projeto
         </div>
-      </header>
+
+        <div className="text-lg font-semibold">
+          Terceiro Nível
+        </div>
+      </div>
+    </div>
+
+    <button className="text-sm border border-zinc-300 rounded-full px-4 py-2">
+      Participar
+    </button>
+
+  </div>
+</header>
 
       {/* HERO */}
       <section id="inicio" className="px-6 pt-16 pb-20">
