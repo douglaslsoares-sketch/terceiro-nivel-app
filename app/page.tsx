@@ -303,9 +303,7 @@ export default function Home() {
               Compartilhar no WhatsApp
           </a>
 
-            <button className="border border-zinc-300 rounded-2xl py-4 px-6 text-base font-medium">
-              Copiar mensagem
-            </button>
+           
           </div>
         </div>
       </section>
