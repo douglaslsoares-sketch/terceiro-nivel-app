@@ -105,9 +105,12 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col gap-4 mt-12">
-            <button className="bg-zinc-900 text-white rounded-2xl py-4 px-6 text-base font-medium">
+            <a
+              href="/narrativa"
+              className="block w-full bg-zinc-900 text-white rounded-2xl py-4 px-6 text-base font-medium text-center"
+>
               Ler a narrativa completa
-            </button>
+            </a>
 
             <a
               href="https://wa.me/?text=Se%20o%20Brasil%20arrecada%20trilh%C3%B5es,%20por%20que%20falta%20dinheiro?%20https://terceironivel.org"
@@ -226,6 +229,9 @@ export default function Home() {
   </a>
 
 </div>
+</div>
+</section>
+
 
       {/* SHIRT */}
       <section className="bg-zinc-900 text-white py-20 px-6">
@@ -263,6 +269,7 @@ export default function Home() {
 </a>
         </div>
       </section>
+      
 
       {/* SHARE */}
       <section className="py-20 px-6">
