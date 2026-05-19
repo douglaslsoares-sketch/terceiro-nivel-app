@@ -23,9 +23,12 @@ export default function Home() {
       </div>
     </div>
 
-    <button className="text-sm border border-zinc-300 rounded-full px-4 py-2">
+    <a
+      href="#participar"
+      className="text-sm border border-zinc-300 rounded-full px-4 py-2"
+>
       Participar
-    </button>
+    </a>
 
   </div>
 </header>
@@ -204,15 +207,25 @@ export default function Home() {
             </p>
           </div>
 
-          <a
-            href="https://wa.me/5543991444266"
-            target="_blank"
-            className="w-full bg-zinc-900 text-white rounded-2xl py-4 px-6 text-base font-medium text-center block"
->
-            Enviar feedback no WhatsApp
-          </a>
-        </div>
-      </section>
+          <div className="flex flex-col gap-4">
+
+  <a
+    href="https://wa.me/5543991444266"
+    target="_blank"
+    className="w-full bg-zinc-900 text-white rounded-2xl py-4 px-6 text-base font-medium text-center block"
+  >
+    Enviar feedback no WhatsApp
+  </a>
+
+  <a
+    href="https://mont.ink/terceiro-nivel"
+    target="_blank"
+    className="w-full border border-zinc-300 rounded-2xl py-4 px-6 text-base font-medium text-center block"
+  >
+    Conhecer a loja
+  </a>
+
+</div>
 
       {/* SHIRT */}
       <section className="bg-zinc-900 text-white py-20 px-6">
@@ -241,7 +254,7 @@ export default function Home() {
           </div>
 
       <a
-  href="https://mont.ink/terceiro-nivel"
+  href="https://montink.com/terceiro-nivel/trilhao-dourada-preta-90hmm"
   target="_blank"
   rel="noopener noreferrer"
   className="block w-full bg-white text-black rounded-2xl py-4 px-6 text-base font-medium text-center hover:opacity-90 transition"
