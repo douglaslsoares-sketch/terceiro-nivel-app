@@ -112,13 +112,13 @@ export default function Home() {
               Ler a narrativa completa
             </a>
 
-            <a
-              href="https://wa.me/?text=Se%20o%20Brasil%20arrecada%20trilh%C3%B5es,%20por%20que%20falta%20dinheiro?%20https://terceironivel.org"
-              target="_blank"
-              className="bg-zinc-900 text-white rounded-2xl py-4 px-6 text-base font-medium text-center"
+           <a
+             href="https://wa.me/?text=Se%20o%20Brasil%20arrecada%20trilh%C3%B5es,%20por%20que%20falta%20dinheiro?%20https://terceironivel.org"
+             target="_blank"
+             className="bg-zinc-900 text-white rounded-2xl py-4 px-6 text-base font-medium text-center"
 >
-              Compartilhar no WhatsApp
-            </a>
+             Compartilhar no WhatsApp
+           </a>
           </div>
         </div>
       </section>
@@ -301,7 +301,7 @@ export default function Home() {
               className="bg-zinc-900 text-white rounded-2xl py-4 px-6 text-base font-medium text-center"
 >
               Compartilhar no WhatsApp
-            </a>
+          </a>
 
             <button className="border border-zinc-300 rounded-2xl py-4 px-6 text-base font-medium">
               Copiar mensagem

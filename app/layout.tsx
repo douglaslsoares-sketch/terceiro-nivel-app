@@ -15,8 +15,24 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Terceiro Nível",
   description: "Traduzindo temas complexos para linguagem acessível.",
-};
 
+  openGraph: {
+    title: "Terceiro Nível",
+    description: "Traduzindo temas complexos para linguagem acessível.",
+    url: "https://terceironivel.org",
+    siteName: "Terceiro Nível",
+    images: [
+      {
+        url: "/logo-nova.png",
+        width: 512,
+        height: 512,
+        alt: "Logo Terceiro Nível",
+      },
+    ],
+    locale: "pt_BR",
+    type: "website",
+  },
+};
 export default function RootLayout({
   children,
 }: Readonly<{
