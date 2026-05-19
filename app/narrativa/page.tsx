@@ -227,6 +227,13 @@ export default function NarrativaPage() {
             Ela começa o debate.
           </p>
 
+          <a
+            href="/#pergunta"
+            className="block w-full mt-16 border border-zinc-300 rounded-2xl py-4 px-6 text-base font-medium text-center hover:bg-zinc-100 transition"
+>
+            Fechar narrativa
+          </a>
+
         </div>
       </div>
     </main>
