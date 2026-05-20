@@ -23,12 +23,30 @@ export default function Home() {
       </div>
     </div>
 
-    <a
-      href="#participar"
-      className="text-sm border border-zinc-300 rounded-full px-4 py-2"
->
-      Participar
-    </a>
+    <div className="flex items-center gap-6">
+
+  <a
+    href="/o-projeto"
+    className="text-sm text-zinc-600 hover:text-black transition"
+  >
+    O Projeto
+  </a>
+
+  <a
+    href="/narrativa"
+    className="text-sm text-zinc-600 hover:text-black transition"
+  >
+    Narrativa
+  </a>
+
+  <a
+    href="#participar"
+    className="text-sm border border-zinc-300 rounded-full px-4 py-2 hover:bg-zinc-100 transition"
+  >
+    Participar
+  </a>
+
+</div>
 
   </div>
 </header>
@@ -63,7 +81,7 @@ export default function Home() {
             href="#projeto"
             className="border border-zinc-300 rounded-2xl py-4 px-6 text-base font-medium text-center"
 >
-            Entender o projeto
+            Entender a estrutura
           </a>
           </div>
         </div>
@@ -112,13 +130,7 @@ export default function Home() {
               Ler a narrativa completa
             </a>
 
-           <a
-             href="https://wa.me/?text=Se%20o%20Brasil%20arrecada%20trilh%C3%B5es,%20por%20que%20falta%20dinheiro?%20https://terceironivel.org"
-             target="_blank"
-             className="bg-zinc-900 text-white rounded-2xl py-4 px-6 text-base font-medium text-center"
->
-             Compartilhar no WhatsApp
-           </a>
+        
           </div>
         </div>
       </section>
@@ -213,100 +225,209 @@ export default function Home() {
           <div className="flex flex-col gap-4">
 
   <a
-    href="https://wa.me/5543991444266"
+    href="/participar"
     target="_blank"
     className="w-full bg-zinc-900 text-white rounded-2xl py-4 px-6 text-base font-medium text-center block"
   >
-    Enviar feedback no WhatsApp
+    Participar da conversa
   </a>
 
-  <a
-    href="https://mont.ink/terceiro-nivel"
-    target="_blank"
-    className="w-full border border-zinc-300 rounded-2xl py-4 px-6 text-base font-medium text-center block"
-  >
-    Conhecer a loja
-  </a>
+ 
 
 </div>
 </div>
 </section>
 
 
-      {/* SHIRT */}
-      <section className="bg-zinc-900 text-white py-20 px-6">
-        <div className="max-w-xl mx-auto">
-          <div className="text-sm uppercase tracking-[0.2em] text-zinc-400 mb-5">
-            Uma pergunta circulando pelas ruas
-          </div>
+      
+      {/* FOLLOW */}
 
-          <div className="border border-zinc-700 rounded-[40px] p-10 mb-10">
-            <p className="text-4xl leading-tight font-semibold">
-              Se o Brasil arrecada trilhões,
-              <br />
-              por que falta dinheiro?
-            </p>
-          </div>
+<section className="border-t border-zinc-200 py-20 px-6">
+  <div className="max-w-xl mx-auto">
 
-          <div className="space-y-6 text-lg leading-relaxed text-zinc-300 mb-12">
-            <p>
-              A camiseta não entrega respostas prontas.
-            </p>
+    <div className="text-sm uppercase tracking-[0.2em] text-zinc-500 mb-5">
+      Acompanhar
+    </div>
 
-            <p>
-              Ela provoca conversa, desperta curiosidade e leva a pergunta para
-              lugares onde esse debate raramente acontece.
-            </p>
-          </div>
+    <h2 className="text-4xl leading-tight font-semibold mb-10">
+      Novos temas continuarão sendo adicionados ao projeto.
+    </h2>
 
-      <a
-  href="https://montink.com/terceiro-nivel/trilhao-dourada-preta-90hmm"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="block w-full bg-white text-black rounded-2xl py-4 px-6 text-base font-medium text-center hover:opacity-90 transition"
->
-  Conhecer a camiseta
-</a>
+    <div className="space-y-6 text-lg leading-relaxed text-zinc-700 mb-12">
+
+      <p>
+        O Terceiro Nível continuará traduzindo temas estruturais para linguagem acessível.
+      </p>
+
+      <p>
+        Você pode informar como prefere acompanhar novos conteúdos, reflexões e narrativas.
+      </p>
+
+    </div>
+
+    <form
+      action="https://formspree.io/f/mykowkzj"
+      method="POST"
+      className="space-y-6"
+    >
+
+      <input
+        type="hidden"
+        name="_subject"
+        value="Novo acompanhamento — Terceiro Nível"
+      />
+
+      <input
+        type="text"
+        name="nome"
+        placeholder="Nome (opcional)"
+        className="w-full border border-zinc-300 rounded-2xl px-5 py-4 text-base outline-none focus:border-black"
+      />
+
+      <input
+        type="email"
+        name="email"
+        placeholder="Seu email"
+        required
+        className="w-full border border-zinc-300 rounded-2xl px-5 py-4 text-base outline-none focus:border-black"
+      />
+
+      <div className="space-y-4">
+
+        <div className="text-base text-zinc-700">
+          Como você prefere acompanhar novos conteúdos?
         </div>
-      </section>
+
+        <label className="flex items-center gap-3 text-zinc-700">
+          <input type="checkbox" name="canal" value="Email" />
+          Email
+        </label>
+
+        <label className="flex items-center gap-3 text-zinc-700">
+          <input type="checkbox" name="canal" value="WhatsApp" />
+          WhatsApp
+        </label>
+
+        <label className="flex items-center gap-3 text-zinc-700">
+          <input type="checkbox" name="canal" value="Instagram" />
+          Instagram
+        </label>
+
+        <label className="flex items-center gap-3 text-zinc-700">
+          <input type="checkbox" name="canal" value="Telegram" />
+          Telegram
+        </label>
+
+        <label className="flex items-center gap-3 text-zinc-700">
+          <input type="checkbox" name="canal" value="Site" />
+          Site
+        </label>
+
+      </div>
+
+      <textarea
+        name="temas"
+        placeholder="Quais temas você gostaria de acompanhar?"
+        rows={5}
+        className="w-full border border-zinc-300 rounded-2xl px-5 py-4 text-base outline-none focus:border-black resize-none"
+      />
+
+      <button
+        type="submit"
+        className="w-full bg-zinc-900 text-white rounded-2xl py-4 px-6 text-base font-medium hover:opacity-90 transition"
+      >
+        Acompanhar novos conteúdos
+      </button>
+
+    </form>
+
+  </div>
+</section>
       
 
-      {/* SHARE */}
-      <section className="py-20 px-6">
-        <div className="max-w-xl mx-auto">
-          <div className="text-sm uppercase tracking-[0.2em] text-zinc-500 mb-5">
-            Faça circular
-          </div>
+     {/* SHARE */}
 
-          <h2 className="text-4xl leading-tight font-semibold mb-10">
-            Temas importantes também precisam circular de pessoa para pessoa.
-          </h2>
+<section className="py-20 px-6">
+  <div className="max-w-xl mx-auto">
 
-          <div className="space-y-6 text-lg leading-relaxed text-zinc-700 mb-12">
-            <p>
-              Escolhemos o compartilhamento orgânico como parte central do
-              projeto.
-            </p>
+    <div className="text-sm uppercase tracking-[0.2em] text-zinc-500 mb-5">
+      Faça circular
+    </div>
 
-            <p>
-              Porque às vezes uma conversa simples alcança lugares onde debates
-              oficiais nunca chegaram.
-            </p>
-          </div>
+    <h2 className="text-4xl leading-tight font-semibold mb-10">
+      Temas importantes também precisam circular de pessoa para pessoa.
+    </h2>
 
-          <div className="flex flex-col gap-4">
-            <a
-              href="https://wa.me/?text=Se%20o%20Brasil%20arrecada%20trilh%C3%B5es,%20por%20que%20falta%20dinheiro?%20https://terceironivel.org"
-              target="_blank"
-              className="bg-zinc-900 text-white rounded-2xl py-4 px-6 text-base font-medium text-center"
+    <div className="space-y-6 text-lg leading-relaxed text-zinc-700 mb-12">
+
+      <p>
+        Escolhemos o compartilhamento orgânico como parte central do projeto.
+      </p>
+
+      <p>
+        Porque às vezes uma conversa simples alcança lugares onde debates oficiais nunca chegaram.
+      </p>
+
+    </div>
+
+    <div className="border border-zinc-300 rounded-[32px] p-6 mb-8 bg-zinc-50">
+
+      <p className="text-base leading-relaxed text-zinc-700">
+        Se o Brasil arrecada trilhões, por que falta dinheiro?
+        <br /><br />
+        https://terceironivel.org
+      </p>
+
+    </div>
+
+<a
+  href="https://wa.me/?text=Se%20o%20Brasil%20arrecada%20trilh%C3%B5es,%20por%20que%20falta%20dinheiro%3F%0A%0Ahttps%3A%2F%2Fterceironivel.org"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="block w-full bg-zinc-900 text-white rounded-2xl py-4 px-6 text-base font-medium text-center hover:opacity-90 transition"
 >
-              Compartilhar no WhatsApp
-          </a>
+  Copiar mensagem
+</a>
 
-           
-          </div>
-        </div>
-      </section>
+  </div>
+</section>
+
+  {/* STORE */}
+
+<section className="bg-zinc-900 text-white py-20 px-6">
+  <div className="max-w-xl mx-auto">
+
+    <div className="text-sm uppercase tracking-[0.2em] text-zinc-400 mb-5">
+      Levar a conversa para fora da internet
+    </div>
+
+    <h2 className="text-4xl leading-tight font-semibold mb-10">
+      O projeto também existe em peças físicas.
+    </h2>
+
+    <div className="space-y-6 text-lg leading-relaxed text-zinc-300 mb-12">
+
+      <p>
+        Algumas perguntas precisam circular além das redes sociais e dos espaços digitais.
+      </p>
+
+      <p>
+        As peças do Terceiro Nível ajudam a levar temas estruturais para o cotidiano das pessoas.
+      </p>
+
+    </div>
+
+    <a
+      href="https://montink.com/terceiro-nivel"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="block w-full bg-white text-black rounded-2xl py-4 px-6 text-base font-medium text-center hover:opacity-90 transition"
+    >
+      Conhecer a loja
+    </a>
+
+  </div>
+</section>
 
       {/* FOOTER */}
       <footer className="border-t border-zinc-200 py-14 px-6">
@@ -320,11 +441,21 @@ export default function Home() {
           </p>
 
           <div className="flex flex-col gap-3 text-zinc-500">
-            <span>Início</span>
-            <span>O Projeto</span>
-            <span>Temas</span>
-            <span>Participar</span>
-          </div>
+
+  <a href="/" className="hover:text-black transition">
+    Início
+  </a>
+
+  <a href="/o-projeto" className="hover:text-black transition">
+    O Projeto
+  </a>
+
+ <a href="/temas">Temas</a>
+  <a href="#participar" className="hover:text-black transition">
+    Participar
+  </a>
+
+</div>
         </div>
       </footer>
     </main>
