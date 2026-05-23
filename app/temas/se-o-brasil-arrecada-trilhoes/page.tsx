@@ -1,17 +1,18 @@
-export default function NarrativaPage() {
+export default function TemaArrecadacaoPage() {
   return (
-    <main className="min-h-screen bg-white text-black px-6 py-20">
-      <div className="max-w-3xl mx-auto">
+    <main className="min-h-screen bg-[#f5f5f3] text-zinc-900">
+      <section className="py-20 md:py-28 px-6">
+        <div className="max-w-2xl mx-auto">
 
         <div className="text-sm uppercase tracking-[0.2em] text-zinc-500 mb-6">
-          Narrativa
+          Tema 02
         </div>
 
-        <h1 className="text-5xl leading-tight font-semibold mb-12">
+        <h1 className="text-4xl md:text-5xl leading-tight font-semibold mb-8 md:mb-10">
           Se o Brasil arrecada trilhões, por que falta dinheiro?
         </h1>
 
-        <div className="space-y-8 text-xl leading-relaxed text-zinc-700">
+        <div className="space-y-6 text-lg leading-relaxed text-zinc-700">
 
           <p>
             Todos os anos o Brasil arrecada valores gigantescos.
@@ -31,14 +32,16 @@ export default function NarrativaPage() {
             Falta dinheiro.
           </p>
 
-          <p>
-            Falta dinheiro para hospitais.<br />
-            Falta dinheiro para escolas.<br />
-            Falta dinheiro para infraestrutura.<br />
-            Falta dinheiro para segurança.<br />
-            Falta dinheiro para ciência.<br />
-            Falta dinheiro para investimento.
-          </p>
+          <ul className="list-disc pl-6 space-y-2">
+
+            <li>Falta dinheiro para hospitais.</li>
+            <li>Falta dinheiro para escolas.</li>
+            <li>Falta dinheiro para infraestrutura.</li>
+            <li>Falta dinheiro para segurança.</li>
+            <li>Falta dinheiro para ciência.</li>
+            <li>Falta dinheiro para investimento.</li>
+
+          </ul>
 
           <p>
             A pergunta parece inevitável:
@@ -75,7 +78,7 @@ export default function NarrativaPage() {
             em algo que as pessoas consigam realmente visualizar.
           </p>
 
-          <h2 className="text-3xl font-semibold pt-10">
+          <h2 className="text-3xl md:text-4xl leading-tight font-semibold pt-10">
             O tamanho da arrecadação
           </h2>
 
@@ -114,7 +117,7 @@ export default function NarrativaPage() {
             distribuição eficiente.
           </p>
 
-          <h2 className="text-3xl font-semibold pt-10">
+          <h2 className="text-3xl md:text-4xl leading-tight font-semibold pt-10">
             A dívida pública muda a conversa
           </h2>
 
@@ -149,7 +152,7 @@ export default function NarrativaPage() {
             para sustentar essa estrutura financeira.
           </p>
 
-          <h2 className="text-3xl font-semibold pt-10">
+          <h2 className="text-3xl md:text-4xl leading-tight font-semibold pt-10">
             A população sente o sistema na ponta
           </h2>
 
@@ -175,7 +178,7 @@ export default function NarrativaPage() {
             <li>na dificuldade de crescer</li>
           </ul>
 
-          <h2 className="text-3xl font-semibold pt-10">
+          <h2 className="text-3xl md:text-4xl leading-tight font-semibold pt-10">
             O problema também é linguagem
           </h2>
 
@@ -198,7 +201,7 @@ export default function NarrativaPage() {
             Mas traduzindo estruturas complexas para linguagem humana.
           </blockquote>
 
-          <h2 className="text-3xl font-semibold pt-10">
+          <h2 className="text-3xl md:text-4xl leading-tight font-semibold pt-10">
             A pergunta continua
           </h2>
 
@@ -227,15 +230,62 @@ export default function NarrativaPage() {
             Ela começa o debate.
           </p>
 
-          <a
-            href="/#pergunta"
-            className="block w-full mt-16 border border-zinc-300 rounded-2xl py-4 px-6 text-base font-medium text-center hover:bg-zinc-100 transition"
->
-            Fechar narrativa
-          </a>
+          <p>
+            O Terceiro Nível continua observando estruturas que impactam diretamente
+            a vida cotidiana da população, mas que raramente aparecem de forma
+            compreensível no debate público.
+         </p>
 
         </div>
       </div>
+    </section>
+
+{/* ENCERRAMENTO */}
+
+<section className="py-16 md:py-20 px-6 border-t border-zinc-200">
+  <div className="max-w-2xl mx-auto">
+
+    <div className="text-sm uppercase tracking-[0.2em] text-zinc-500 mb-6">
+      Encerramento
+    </div>
+
+    <h2 className="text-3xl md:text-4xl leading-tight font-semibold mb-10">
+      Talvez compreender estruturas complexas também seja uma forma de participação.
+    </h2>
+
+    <div className="space-y-6 text-lg leading-relaxed text-zinc-700 mb-12">
+
+      <p>
+        O Terceiro Nível nasce da percepção de que muitas pessoas convivem
+        diariamente com os impactos de estruturas que raramente conseguem
+        visualizar completamente.
+      </p>
+
+      <p>
+        Nem toda reflexão produz respostas imediatas.
+      </p>
+
+      <p>
+        Mas ampliar a percepção sobre determinadas estruturas talvez já seja um
+        primeiro passo importante.
+      </p>
+
+    </div>
+
+    <p className="text-zinc-600 text-lg leading-relaxed mb-10">
+        Continue observando outros temas do projeto.
+    </p>
+
+    <a
+      href="/temas"
+      className="inline-block w-full sm:w-auto bg-zinc-900 text-white rounded-2xl py-4 px-8 text-base font-medium hover:bg-zinc-800 transition-all duration-300"
+    >
+      Voltar aos temas
+    </a>
+
+  </div>
+</section>
+
     </main>
   )
 }
