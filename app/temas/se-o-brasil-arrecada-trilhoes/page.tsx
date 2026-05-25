@@ -4,9 +4,7 @@ export default function TemaArrecadacaoPage() {
       <section className="py-20 md:py-28 px-6">
         <div className="max-w-2xl mx-auto">
 
-        <div className="text-sm uppercase tracking-[0.2em] text-zinc-500 mb-6">
-          Tema 02
-        </div>
+       
 
         <h1 className="text-4xl md:text-5xl leading-tight font-semibold mb-8 md:mb-10">
           Se o Brasil arrecada trilhões, por que falta dinheiro?
@@ -277,10 +275,10 @@ export default function TemaArrecadacaoPage() {
     </p>
 
     <a
-      href="/temas"
+      href="/participar"
       className="inline-block w-full sm:w-auto bg-zinc-900 text-white rounded-2xl py-4 px-8 text-base font-medium hover:bg-zinc-800 transition-all duration-300"
     >
-      Voltar aos temas
+      Participar
     </a>
 
   </div>

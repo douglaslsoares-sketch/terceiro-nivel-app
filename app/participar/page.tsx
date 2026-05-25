@@ -261,7 +261,7 @@ do projeto.
   </div>
 
   <h2 className="text-3xl md:text-4xl leading-tight font-semibold mb-10">
-    Algumas perguntas importantes ainda não chegaram ao debate público.
+    Algumas reflexões importantes ainda não chegaram ao debate público.
   </h2>
 
   <div className="space-y-6 text-lg leading-relaxed text-zinc-700 mb-12">
@@ -335,12 +335,14 @@ do projeto.
 
   </div>
 
-  <a
-    href="/loja"
-    className="inline-block w-full sm:w-auto bg-zinc-900 text-white rounded-2xl py-4 px-8 text-base font-medium hover:bg-zinc-800 transition-all duration-300"
-  >
-    Conhecer a loja
-  </a>
+ <a
+  href="https://mont.ink/terceiro-nivel"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-block w-full sm:w-auto bg-zinc-900 text-white rounded-2xl py-4 px-8 text-base font-medium hover:bg-zinc-800 transition-all duration-300"
+>
+  Conhecer a loja
+</a>
 
 </section>
 
