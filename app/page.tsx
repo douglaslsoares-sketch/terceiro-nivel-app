@@ -21,7 +21,7 @@ export default function Home() {
             </div>
 
             <a
-              href="/temas/por-que-terceiro-nivel"
+              href="/editorial/por-que-terceiro-nivel"
               className="text-sm text-zinc-500 hover:text-zinc-900 transition-colors duration-300"
             >
               [por que terceiro nível?]
@@ -51,7 +51,7 @@ export default function Home() {
 <div className="flex flex-col items-center gap-4">
 
   <a
-    href="/temas"
+    href="/temas/se-o-brasil-arrecada-trilhoes"
     className="text-sm uppercase tracking-[0.2em] text-zinc-500 hover:text-zinc-900 transition-colors duration-300"
   >
     Temas
