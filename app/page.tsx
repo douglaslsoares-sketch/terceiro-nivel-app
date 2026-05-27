@@ -21,7 +21,7 @@ export default function Home() {
             </div>
 
             <a
-              href="/editorial/por-que-terceiro-nivel"
+              href="/temas/por-que-terceiro-nivel"
               className="text-sm text-zinc-500 hover:text-zinc-900 transition-colors duration-300"
             >
               [por que terceiro nível?]

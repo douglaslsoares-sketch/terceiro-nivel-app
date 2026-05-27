@@ -9,42 +9,69 @@ export default function TemasPage() {
         <div className="max-w-2xl mx-auto">
 
           <div className="text-sm uppercase tracking-[0.2em] text-zinc-500">
-            Temas
+            Tema
           </div>
 
         </div>
 
       </section>
 
-      {/* LISTA */}
+      {/* CONTEÚDO */}
 
       <section className="py-20 px-6">
 
-        <div className="max-w-2xl mx-auto space-y-8">
+        <div className="max-w-2xl mx-auto">
 
+          <article className="space-y-8 text-lg leading-relaxed text-zinc-700">
 
-          {/* TEMA */}
-
-          <div className="border border-zinc-200 rounded-[32px] p-8 bg-white transition-all duration-300 hover:-translate-y-1 hover:shadow-sm">
-
-            <h2 className="text-3xl leading-tight font-semibold mb-6">
+            <h1 className="text-4xl md:text-5xl leading-tight font-semibold text-zinc-900">
               Se o Brasil arrecada trilhões, por que falta dinheiro?
-            </h2>
-
-            <p className="text-lg leading-relaxed text-zinc-700 mb-8">
-              Uma observação sobre arrecadação, dívida pública, percepção
-              econômica e a distância entre estruturas financeiras complexas e a
-              vida cotidiana da população.
+            </h1>
+           
+            <p>
+              É o que nós também queremos saber.
             </p>
 
-            <a
-              href="/temas/se-o-brasil-arrecada-trilhoes"
-              className="inline-block bg-zinc-900 text-white rounded-2xl py-4 px-8 text-base font-medium hover:bg-zinc-800 transition-all duration-300"
-            >
-              Ler tema
-            </a>
+            <p>
+              Quase 50% do orçamento federal vai para a dívida pública.
+            </p>
 
-          </div>
+            <p>
+              Enquanto isso, falta para as demais áreas, principalmente saúde e educação.
+            </p>
+
+            {/* GRÁFICO ACD */}
+
+           <div className="border border-zinc-200 rounded-[32px] p-4 bg-white overflow-hidden">
+
+  <img
+    src="/grafico-acd.png"
+    alt="Gráfico ACD"
+    className="w-full h-auto rounded-[24px]"
+  />
+
+</div>
+            
+            <p className="text-2xl leading-relaxed font-medium text-zinc-900">
+              Que dívida é essa?
+            </p>
+
+            <p>
+              Se você também deseja saber, participe dessa campanha.
+            </p>
+
+            <div className="pt-6">
+
+              <a
+                href="/participar"
+                className="inline-block bg-zinc-900 text-white rounded-2xl py-4 px-8 text-base font-medium hover:bg-zinc-800 transition-all duration-300"
+              >
+                Participar
+              </a>
+
+            </div>
+
+          </article>
 
         </div>
 
