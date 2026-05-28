@@ -1,8 +1,9 @@
 "use client"
 
-import { useState } from "react"
+import React, { useState } from "react"
 
-async function handleSubmit(
+
+async function handleReflexoesSubmit(
   e: React.FormEvent<HTMLFormElement>
 ) {
   e.preventDefault()
@@ -22,9 +23,81 @@ async function handleSubmit(
   )
 
   if (response.ok) {
-    window.location.href = "/participar/enviado"
-  }
+
+  window.location.href = "/participar/enviado?tipo=reflexoes"
+
+} else {
+
+  alert("Erro ao enviar formulário")
+
 }
+}
+
+async function handleAcompanharSubmit(
+  e: React.FormEvent<HTMLFormElement>
+) {
+
+  e.preventDefault()
+
+  const form = e.currentTarget
+  const data = new FormData(form)
+
+  const response = await fetch(
+    "https://formspree.io/f/mykowkzj",
+    {
+      method: "POST",
+      body: data,
+      headers: {
+        Accept: "application/json",
+      },
+    }
+  )
+
+ if (response.ok) {
+
+  window.location.href = "/participar/enviado?tipo=acompanhar"
+
+} else {
+
+  alert("Erro ao enviar formulário")
+
+}
+
+}
+
+async function handleTemasSubmit(
+  e: React.FormEvent<HTMLFormElement>
+) {
+
+  e.preventDefault()
+
+  const form = e.currentTarget
+  const data = new FormData(form)
+
+  const response = await fetch(
+    "https://formspree.io/f/mykowkzj",
+    {
+      method: "POST",
+      body: data,
+      headers: {
+        Accept: "application/json",
+      },
+    }
+  )
+
+  if (response.ok) {
+
+  window.location.href = "/participar/enviado?tipo=temas"
+
+} else {
+
+  alert("Erro ao enviar formulário")
+
+}
+
+}
+
+
 export default function ParticiparPage() {
 
   const [copiado, setCopiado] = useState("")
@@ -56,20 +129,21 @@ export default function ParticiparPage() {
 do projeto.
         </p>
 
+
+        <section
+  id="reflexoes"
+  className="scroll-mt-42"
+>
         <div className="text-sm uppercase tracking-[0.2em] text-zinc-500 mb-6 mt-16">
   Reflexões
         </div>
 
        <form
-         onSubmit={handleSubmit}
+         onSubmit={handleReflexoesSubmit}
          className="space-y-6"
         >
 
-      <input
-  type="hidden"
-  name="_next"
-  value="http://localhost:3000/participar/enviado"
-/>
+    
           <input
             type="text"
             name="nome"
@@ -99,10 +173,14 @@ do projeto.
           </button>
 
         </form>
+        </section>
 
         {/* ACOMPANHAR */}
 
-<section className="py-16 md:py-20 border-t border-zinc-200 mt-20">
+<section
+  id="acompanhar"
+  className="scroll-mt-24 py-16 md:py-20 border-t border-zinc-200 mt-20"
+>
 
   <div className="text-sm uppercase tracking-[0.2em] text-zinc-500 mb-6">
     Acompanhar
@@ -126,11 +204,10 @@ do projeto.
 
   </div>
 
-  <form
-    action="https://formspree.io/f/mykowkzj"
-    method="POST"
-    className="space-y-6"
-  >
+ <form
+  onSubmit={handleAcompanharSubmit}
+  className="space-y-6"
+>
 
     <input
       type="email"
@@ -146,25 +223,28 @@ do projeto.
     Canais
   </div>
 
-  <div className="flex flex-wrap gap-3">
+  <input
+    type="text"
+    name="whatsapp"
+    placeholder="Seu WhatsApp"
+    className="w-full border border-zinc-300 rounded-2xl px-5 py-4 text-base outline-none focus:border-black"
+  />
 
-    
-    <div className="border border-zinc-300 bg-white rounded-2xl px-4 py-3 text-sm">
-      WhatsApp
-    </div>
+  <input
+    type="text"
+    name="instagram"
+    placeholder="Seu Instagram"
+    className="w-full border border-zinc-300 rounded-2xl px-5 py-4 text-base outline-none focus:border-black"
+  />
 
-    <div className="border border-zinc-300 bg-white rounded-2xl px-4 py-3 text-sm">
-      Instagram
-    </div>
-
-    <div className="border border-zinc-300 bg-white rounded-2xl px-4 py-3 text-sm">
-      Telegram
-    </div>
-
-  </div>
+  <input
+    type="text"
+    name="telegram"
+    placeholder="Seu Telegram"
+    className="w-full border border-zinc-300 rounded-2xl px-5 py-4 text-base outline-none focus:border-black"
+  />
 
 </div>
-
 
     <button
       type="submit"
@@ -179,7 +259,10 @@ do projeto.
 
 {/* COMPARTILHAR */}
 
-<section className="py-16 md:py-20 border-t border-zinc-200 mt-20">
+<section 
+id="compartilhar"
+
+className="py-16 md:py-20 border-t border-zinc-200 mt-20">
 
   <div className="text-sm uppercase tracking-[0.2em] text-zinc-500 mb-6">
     Compartilhar
@@ -205,19 +288,23 @@ do projeto.
 
   </div>
 
+  <p className="text-lg leading-relaxed text-zinc-700 mb-10">
+  Algumas ideias merecem circular. Se desejar, copie uma das mensagens abaixo e compartilhe.
+</p>
+
   <div className="space-y-6">
 
     <div className="bg-white border border-zinc-200 rounded-[32px] p-8">
+<p className="text-lg leading-relaxed text-zinc-700 mb-6">
+  "O terceiro nível é a camada da sociedade que sustenta tudo e mantém o país funcionando, mas não tem tempo para entender o Sistema.
 
-      <p className="text-lg leading-relaxed text-zinc-700 mb-6">
-        "O terceiro nível é a camada da sociedade que sustenta tudo e mantém o
-        país funcionando, mas não tem tempo para entender o Sistema."
-      </p>
+  https://terceironivel.org"
+</p>
 
-     <button
+<button
   onClick={() =>
     copiarMensagem(
-      "O terceiro nível é a camada da sociedade que sustenta tudo e mantém o país funcionando, mas não tem tempo para entender o Sistema.",
+      "O terceiro nível é a camada da sociedade que sustenta tudo e mantém o país funcionando, mas não tem tempo para entender o Sistema.\n\nhttps://terceironivel.org",
       "mensagem1"
     )
   }
@@ -231,21 +318,23 @@ do projeto.
     <div className="bg-white border border-zinc-200 rounded-[32px] p-8">
 
       <p className="text-lg leading-relaxed text-zinc-700 mb-6">
-        "Se o Brasil arrecada trilhões, por que falta dinheiro?"
-      </p>
+  "Se o Brasil arrecada trilhões, por que falta dinheiro?
 
-      <button
+  https://terceironivel.org"
+</p>
+
+<button
   onClick={() =>
     copiarMensagem(
-      "Se o Brasil arrecada trilhões, por que falta dinheiro?",
+      "Se o Brasil arrecada trilhões, por que falta dinheiro?\n\nhttps://terceironivel.org",
       "mensagem2"
     )
   }
   className="w-full sm:w-auto bg-zinc-900 text-white rounded-2xl py-4 px-6 text-base font-medium hover:bg-zinc-800 transition-all duration-300"
 >
   {copiado === "mensagem2" ? "Copiado" : "Copiar mensagem"}
-</button>
 
+</button>
     </div>
 
   </div>
@@ -254,7 +343,10 @@ do projeto.
 
 {/* SUGERIR NOVOS TEMAS */}
 
-<section className="py-16 md:py-20 border-t border-zinc-200 mt-20">
+<section
+  id="temas"
+  className="scroll-mt-24 py-16 md:py-20 border-t border-zinc-200 mt-20"
+>
 
   <div className="text-sm uppercase tracking-[0.2em] text-zinc-500 mb-6">
     Novos temas
@@ -278,11 +370,12 @@ do projeto.
 
   </div>
 
-  <form
-    action="https://formspree.io/f/mykowkzj"
-    method="POST"
-    className="space-y-6"
-  >
+ <form
+  onSubmit={handleTemasSubmit}
+  className="space-y-6"
+>
+  
+ 
 
     <input
       type="text"
@@ -311,7 +404,10 @@ do projeto.
 
 {/* LOJA */}
 
-<section className="py-16 md:py-20 border-t border-zinc-200 mt-20">
+<section 
+id="loja"
+
+className="py-16 md:py-20 border-t border-zinc-200 mt-20">
 
   <div className="text-sm uppercase tracking-[0.2em] text-zinc-500 mb-6">
     Loja
