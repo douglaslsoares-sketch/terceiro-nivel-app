@@ -23,14 +23,14 @@ export const metadata: Metadata = {
     description: "Traduzindo temas complexos para linguagem acessível.",
     url: "https://terceironivel.org",
     siteName: "Terceiro Nível",
-    images: [
-      {
-        url: "/logo-nova.png",
-        width: 512,
-        height: 512,
-        alt: "Logo Terceiro Nível",
-      },
-    ],
+   images: [
+  {
+    url: "/og-image.png",
+    width: 1200,
+    height: 630,
+    alt: "Terceiro Nível",
+  },
+],
     locale: "pt_BR",
     type: "website",
   },
