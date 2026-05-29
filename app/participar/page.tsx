@@ -435,7 +435,7 @@ className="py-16 md:py-20 border-t border-zinc-200 mt-20">
   href="https://mont.ink/terceiro-nivel"
   target="_blank"
   rel="noopener noreferrer"
-  className="inline-block w-full sm:w-auto bg-zinc-900 text-white rounded-2xl py-4 px-8 text-base font-medium hover:bg-zinc-800 transition-all duration-300"
+  className="inline-block w-full sm:w-auto text-center bg-zinc-900 text-white rounded-2xl py-4 px-8 text-base font-medium hover:bg-zinc-800 transition-all duration-300"
 >
   Conhecer a loja
 </a>
