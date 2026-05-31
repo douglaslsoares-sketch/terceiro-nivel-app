@@ -318,15 +318,18 @@ className="py-16 md:py-20 border-t border-zinc-200 mt-20">
     <div className="bg-white border border-zinc-200 rounded-[32px] p-8">
 
       <p className="text-lg leading-relaxed text-zinc-700 mb-6">
-  "Se o Brasil arrecada trilhões, por que falta dinheiro?
+  "Terceiro Nível
 
-  https://terceironivel.org"
+Traduzindo temas complexos para linguagem acessível.
+
+https://terceironivel.org
+"
 </p>
 
 <button
   onClick={() =>
     copiarMensagem(
-      "Se o Brasil arrecada trilhões, por que falta dinheiro?\n\nhttps://terceironivel.org",
+      "Traduzindo temas complexos para linguagem acessível.\n\nhttps://terceironivel.org",
       "mensagem2"
     )
   }
