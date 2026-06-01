@@ -295,8 +295,11 @@ className="py-16 md:py-20 border-t border-zinc-200 mt-20">
   <div className="space-y-6">
 
     <div className="bg-white border border-zinc-200 rounded-[32px] p-8">
+
 <p className="text-lg leading-relaxed text-zinc-700 mb-6">
-  "O terceiro nível é a camada da sociedade que sustenta tudo e mantém o país funcionando, mas não tem tempo para entender o Sistema.
+  "O Terceiro Nível é a camada da sociedade que sustenta tudo e mantém o país funcionando, mas não tem tempo para entender o Sistema.
+
+  Conheça o projeto:
 
   https://terceironivel.org"
 </p>
@@ -304,7 +307,7 @@ className="py-16 md:py-20 border-t border-zinc-200 mt-20">
 <button
   onClick={() =>
     copiarMensagem(
-      "O terceiro nível é a camada da sociedade que sustenta tudo e mantém o país funcionando, mas não tem tempo para entender o Sistema.\n\nhttps://terceironivel.org",
+      "O Terceiro Nível é a camada da sociedade que sustenta tudo e mantém o país funcionando, mas não tem tempo para entender o Sistema.\n\nConheça o projeto:\n\nhttps://terceironivel.org",
       "mensagem1"
     )
   }
@@ -317,29 +320,7 @@ className="py-16 md:py-20 border-t border-zinc-200 mt-20">
 
     <div className="bg-white border border-zinc-200 rounded-[32px] p-8">
 
-      <p className="text-lg leading-relaxed text-zinc-700 mb-6">
-  "Terceiro Nível
-
-Traduzindo temas complexos para linguagem acessível.
-
-https://terceironivel.org
-"
-</p>
-
-<button
-  onClick={() =>
-    copiarMensagem(
-      "Traduzindo temas complexos para linguagem acessível.\n\nhttps://terceironivel.org",
-      "mensagem2"
-    )
-  }
-  className="w-full sm:w-auto bg-zinc-900 text-white rounded-2xl py-4 px-6 text-base font-medium hover:bg-zinc-800 transition-all duration-300"
->
-  {copiado === "mensagem2" ? "Copiado" : "Copiar mensagem"}
-
-</button>
-    </div>
-
+      
   </div>
 
 </section>
