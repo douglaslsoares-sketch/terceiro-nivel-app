@@ -318,9 +318,6 @@ className="py-16 md:py-20 border-t border-zinc-200 mt-20">
 
     </div>
 
-    <div className="bg-white border border-zinc-200 rounded-[32px] p-8">
-
-      
   </div>
 
 </section>
