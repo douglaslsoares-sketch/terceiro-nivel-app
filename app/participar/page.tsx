@@ -297,20 +297,22 @@ className="py-16 md:py-20 border-t border-zinc-200 mt-20">
     <div className="bg-white border border-zinc-200 rounded-[32px] p-8">
 
 <p className="text-lg leading-relaxed text-zinc-700 mb-6">
-  "O Terceiro Nível é a camada da sociedade que sustenta tudo e mantém o país funcionando, mas não tem tempo para entender o Sistema.
+  Você já ouviu falar do Terceiro Nível?
 
-  Conheça o projeto:
+  O Terceiro Nível é um projeto que procura traduzir temas complexos para uma linguagem acessível e incentivar reflexão pública.
 
-  https://terceironivel.org"
+  Representa todos aqueles que, com seu trabalho, mantêm o país funcionando diariamente, mas não têm tempo para compreender muitos dos assuntos que afetam suas próprias vidas.
+
+  https://terceironivel.org
 </p>
 
 <button
   onClick={() =>
-    copiarMensagem(
-      "O Terceiro Nível é a camada da sociedade que sustenta tudo e mantém o país funcionando, mas não tem tempo para entender o Sistema.\n\nConheça o projeto:\n\nhttps://terceironivel.org",
-      "mensagem1"
-    )
-  }
+  copiarMensagem(
+    "Você já ouviu falar do Terceiro Nível?\n\nO Terceiro Nível é um projeto que procura traduzir temas complexos para uma linguagem acessível e incentivar reflexão pública.\n\nRepresenta todos aqueles que, com seu trabalho, mantêm o país funcionando diariamente, mas não têm tempo para compreender muitos dos assuntos que afetam suas próprias vidas.\n\nhttps://terceironivel.org",
+    "mensagem1"
+  )
+}
   className="w-full sm:w-auto bg-zinc-900 text-white rounded-2xl py-4 px-6 text-base font-medium hover:bg-zinc-800 transition-all duration-300"
 >
   {copiado === "mensagem1" ? "Copiado" : "Copiar mensagem"}
