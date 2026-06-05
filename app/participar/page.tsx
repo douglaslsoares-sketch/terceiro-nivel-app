@@ -299,7 +299,7 @@ className="py-16 md:py-20 border-t border-zinc-200 mt-20">
 <p className="text-lg leading-relaxed text-zinc-700 mb-6">
   Você já ouviu falar do Terceiro Nível?
 
-  O Terceiro Nível é um projeto que procura traduzir temas complexos para uma linguagem acessível e incentivar reflexão pública.
+ O Terceiro Nível é um projeto de conscientização que aproxima as pessoas dos assuntos que afetam seu dia a dia.
 
   Representa todos aqueles que, com seu trabalho, mantêm o país funcionando diariamente, mas não têm tempo para compreender muitos dos assuntos que afetam suas próprias vidas.
 
@@ -309,7 +309,7 @@ className="py-16 md:py-20 border-t border-zinc-200 mt-20">
 <button
   onClick={() =>
   copiarMensagem(
-    "Você já ouviu falar do Terceiro Nível?\n\nO Terceiro Nível é um projeto que procura traduzir temas complexos para uma linguagem acessível e incentivar reflexão pública.\n\nRepresenta todos aqueles que, com seu trabalho, mantêm o país funcionando diariamente, mas não têm tempo para compreender muitos dos assuntos que afetam suas próprias vidas.\n\nhttps://terceironivel.org",
+    "Você já ouviu falar do Terceiro Nível?\n\nO Terceiro Nível é um projeto de conscientização que aproxima as pessoas dos assuntos que afetam seu dia a dia.\n\nRepresenta todos aqueles que, com seu trabalho, mantêm o país funcionando diariamente, mas não têm tempo para compreender muitos dos assuntos que afetam suas próprias vidas.\n\nhttps://terceironivel.org",
     "mensagem1"
   )
 }

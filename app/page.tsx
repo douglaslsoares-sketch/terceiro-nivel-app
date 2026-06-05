@@ -16,9 +16,13 @@ export default function Home() {
               className="w-16 h-16 object-contain mb-6"
             />
 
-            <div className="text-sm uppercase tracking-[0.3em] text-zinc-500 mb-6">
-              Terceiro Nível
-            </div>
+            <div className="text-sm uppercase tracking-[0.3em] text-zinc-500 mb-2">
+  Terceiro Nível
+</div>
+
+<div className="text-sm text-zinc-500 mb-6">
+  Conscientização e reflexão pública
+</div>
 
             <a
               href="/editorial/por-que-terceiro-nivel"
